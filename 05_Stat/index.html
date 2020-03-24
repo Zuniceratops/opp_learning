@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User {
+            static test = true;
+            constructor(name) {
+                this.name = name;
+            }
+            static getRole(email) {
+                return 'admin';
+            }
+            static getId(email) {
+
+            }
+            static geUser(id) {
+                // return user
+            }
+        }
+        const person = new User('Ivan')
+        console.log(person)
+        console.log(User.getRole('alexex@mail.com'));
+        console.log(User.test);
+
+        //класс = свойства + методы() +вспомогательные инструм
+        //методы
+        class Student  extends User {
+            static test = false;
+            constructor(name) {
+                super();
+            }
+        }
+        console.log(Student.getRole('test'))
+        console.log(Student.test);
+        
+        // свойства
+    
+    
+    </script>
+
+</body>
+</html>
