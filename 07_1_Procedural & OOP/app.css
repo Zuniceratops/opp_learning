@@ -1,0 +1,13 @@
+#user-input {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+}
+.form-control {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.button {
+    margin-left: 60px;
+}
